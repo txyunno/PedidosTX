@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../data/database_helper.dart';
 import '../data/initial_data.dart';
 import '../models/restaurante.dart';
-import 'pratos_page.dart';
 import 'detalhe_page.dart';
 import 'form_restaurante_page.dart';
 
@@ -135,24 +134,6 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Pedidos TX'),
 
         actions: [
-
-              IconButton(
-      icon: const Icon(
-        Icons.restaurant_menu,
-      ),
-
-      tooltip: 'Pratos do Mundo',
-
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (_) =>
-                const PratosPage(),
-          ),
-        );
-      },
-    ),
 
           IconButton(
             icon: const Icon(Icons.add_business),
